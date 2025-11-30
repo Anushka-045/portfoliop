@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anushka's Skills</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Skill page specific styles */
+    .skills-container {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      color: #ff4d94;
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.8rem;
+    }
+
+    .skill-card {
+      background-color: #222;
+      border-radius: 10px;
+      padding: 20px 30px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 15px rgba(255, 77, 148, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .skill-card:hover {
+      transform: scale(1.03);
+    }
+
+    .skill-name {
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+      color: #ff4d94;
+      font-weight: bold;
+    }
+
+    .skill-bar {
+      background-color: #444;
+      border-radius: 10px;
+      overflow: hidden;
+      height: 14px;
+    }
+
+    .skill-progress {
+      height: 14px;
+      background-color: #ff4d94;
+      width: 0;
+      transition: width 1.2s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Anushka Pandey</div>
+    <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html" >About Me</a>
+            <a href="skill.html" style="color:#1e90ff;">Skills</a>
+            
+            <a href="ex.html">Experience</a>
+           <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="skills-container">
+    <h1>My Skills</h1>
+
+    <div class="skill-card">
+      <div class="skill-name">HTML</div>
+      <div class="skill-bar">
+        <div class="skill-progress" style="width: 100%;"></div>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-name">CSS</div>
+      <div class="skill-bar">
+        <div class="skill-progress" style="width: 95%;"></div>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-name">JavaScript</div>
+      <div class="skill-bar">
+        <div class="skill-progress" style="width: 45%;"></div>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-name">Python</div>
+      <div class="skill-bar">
+        <div class="skill-progress" style="width: 50%;"></div>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-name">C</div>
+      <div class="skill-bar">
+        <div class="skill-progress" style="width: 85%;"></div>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-name">C++</div>
+      <div class="skill-bar">
+        <div class="skill-progress" style="width: 60%;"></div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    // Animate the skill progress bars on page load
+    window.addEventListener('DOMContentLoaded', () => {
+      const progresses = document.querySelectorAll('.skill-progress');
+      progresses.forEach(bar => {
+        const width = bar.style.width;
+        bar.style.width = '0';
+        setTimeout(() => {
+          bar.style.width = width;
+        }, 100);
+      });
+    });
+  </script>
+</body>
+</html>
