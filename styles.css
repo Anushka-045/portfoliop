@@ -11,7 +11,7 @@ body {
     line-height: 1.6;
 }
 
-/* Navigation */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -40,9 +40,8 @@ nav a:hover {
     color: #1e90ff;
 }
 
-/* Hero Section with Pink Image Background */
 .hero {
-    background: url('p.png') no-repeat center center/cover; /* replace with your uploaded image file name */
+    background: url('p.png') no-repeat center center/cover; 
     height: 60vh;
     position: relative;
     display: flex;
@@ -50,7 +49,6 @@ nav a:hover {
     justify-content: center;
 }
 
-/* Blur effect */
 .hero::before {
     content: "";
     position: absolute;
@@ -66,7 +64,7 @@ nav a:hover {
     z-index: 1;
     text-align: center;
     color: white;
-    background: rgba(0, 0, 0, 0.4); /* transparent overlay for better text contrast */
+    background: rgba(0, 0, 0, 0.4);
     padding: 20px;
     border-radius: 10px;
 }
@@ -100,7 +98,7 @@ nav a:hover {
 
 .about-home-img img {
     width: 250px;
-    height: 500px; /* makes it square */
+    height: 500px; 
     border-radius: 8px;
     
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -123,7 +121,6 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
-/* About Section about page  */
 .about {
     display: flex;
     align-items: center;
@@ -135,7 +132,7 @@ nav a:hover {
 
 .about-image img {
     width: 250px;
-    height: 500px; /* makes it square */
+    height: 500px; 
     border-radius: 8px;
 }
 
@@ -150,7 +147,7 @@ nav a:hover {
 .about-text p {
     margin-bottom: 15px;
 }
-/* About Page Layout */
+
 .about-page {
     padding: 50px 10%;
     background-color: #ffffff17;
@@ -201,7 +198,7 @@ nav a:hover {
 .btn:hover {
     background-color: #e63978;
 }
-/* /contact */
+
 .contact-page {
     padding: 60px 10%;
     background: #fff;
@@ -266,3 +263,4 @@ nav a:hover {
 .contact-form button:hover {
     background: linear-gradient(90deg, #e89aa2, #f6c1c7);
 }
+
